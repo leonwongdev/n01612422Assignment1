@@ -10,12 +10,13 @@ namespace n01612422Assignment1.Controllers
     public class TimesFiftyController : ApiController
     {
 
-        //GET api/TimesFifty --> "Hello"
+        // GET api/timesFifty --> "Hello"
         public string Get()
         {
             return "Hello";
         }
 
+        // POST api/timesFifty --> "Post method here"
         public string Post()
         {
             return "Post method here";
