@@ -10,12 +10,12 @@ namespace n01612422Assignment1.Controllers
 {
     public class GreetingController : ApiController
     {
-        // GET api/Greeting --> "Hello WOrld!"
+        // Post api/Greeting --> "Hello WOrld!"
         /// <summary>
         /// This method returns a greeting message "Hello World!" as a string.
         /// </summary>
         /// <returns>"Hello World!"</returns>
-        public string Get()
+        public string Post()
         {
             return "Hello World!";
         }

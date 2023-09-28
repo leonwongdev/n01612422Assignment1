@@ -19,11 +19,10 @@ namespace n01612422Assignment1.Controllers
         {
             int numOfDayElapsed = id + 1; // Including day 0
             double costPerFortnight = 5.50;
-            int numOfFortnight = (int)Math.Ceiling( (double)(numOfDayElapsed / 14.0));
-            double costBeforeTax = numOfFortnight * costPerFortnight; // type cast to double to keep the percision
+            int numOfFortnight = (int)Math.Ceiling(numOfDayElapsed / 14.0);
+            double costBeforeTax = numOfFortnight * costPerFortnight;
             double hst = costBeforeTax * 13.0 / 100.0;
-            // double hstTwoDecimalPlace = Math.Floor(hst * 100) / 100;
-            double total = costBeforeTax + hst; // Round down hst to nearest two decimal place
+            double total = costBeforeTax + hst;
             string line1 = $"{numOfFortnight} fortnights at ${costPerFortnight:F2}/FN = ${costBeforeTax:F2} CAD";
             string line2 = $"HST 13% = ${hst:F2} CAD";
             string line3 = $"Total = ${total:F2} CAD";
